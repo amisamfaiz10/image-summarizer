@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imager</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #ecf0f1;
+    }
+
+    /* Sidebar Navbar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+    }
+
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar h2 {
+      margin-left: 60px;
+      color: rgb(134, 169, 243);
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+  .content-wrapper {
+  flex: 1;
+  padding: 60px 40px;
+}
+
+.content-wrapper h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+  color: #444;
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+ <!-- Sidebar Navbar -->
+ <div class="sidebar">
+  <h2>Imager</h2>
+  <hr style="margin-top: 10px;">
+  <a href="{% url 'index' %}">Home</a>
+  <hr>
+  <a href="{% url 'about' %}">About</a>
+</div>
+
+  <!-- Page Content Wrapper -->
+  <div class="content-wrapper">
+    <!-- Heading -->
+    <h1> About Imager</h1>
+    <hr style="margin-bottom: 40px;">
+    <p>
+      The model used here is a pretrained BLIP (Bootstrapped Language-Image Pretraining) model from Salesforce, specifically 
+      <strong>Salesforce/blip-image-captioning-base</strong>. It generates natural-language descriptions of images — a task known as 
+      <em>image captioning</em>. Django is used for handling the backend.
+    </p>
+    
+  </div>
+
+</body>
+</html>

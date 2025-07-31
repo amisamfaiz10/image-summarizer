@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Environment variables
+.env
+
+# VS Code / PyCharm / IDEs
+.vscode/
+.idea/
+
+# Virtual environment
+venv/
+ENV/
+env/
