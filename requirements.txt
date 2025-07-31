@@ -1,0 +1,9 @@
+Django==5.2.4
+torch==2.7.1
+transformers==4.54.0
+huggingface-hub==0.34.1
+pillow==11.3.0
+requests==2.32.4
+tqdm==4.67.1
+regex==2024.11.6
+safetensors==0.5.3
