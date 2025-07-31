@@ -22,4 +22,4 @@ A web application that generates human-like captions for uploaded images using t
 ---
 
 ## Screenshots
- - Available in the UI folder ()
+ - Available in the UI folder (https://github.com/amisamfaiz10/image-summarizer/tree/main/UI)
